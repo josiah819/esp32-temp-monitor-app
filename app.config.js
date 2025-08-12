@@ -3,11 +3,14 @@ export default {
   expo: {
     name: "ESP32 Temp Monitor",
     slug: "esp32-temp-monitor-app",
-    scheme: "esp32temp",
     version: "0.1.0",
-    extra: { API_BASE_URL: "https://esp32-node-bridge-production.up.railway.app" }, // <-- put your Railway URL here
+    scheme: "esp32temp",
+    extra: { API_BASE_URL: "https://esp32-node-bridge-production.up.railway.app" }, // <— your Railway URL
     android: {
-      package: "com.josiah.esp32tempmonitorapp" // <-- pick a unique, all-lowercase package
-    }
+      package: "com.josiah.esp32tempmonitorapp", // all lowercase; must be unique
+      adaptiveIcon: { backgroundColor: "#ffffff" } // no foregroundImage
+    },
+    // No 'icon' property -> Expo uses a default
+    splash: { backgroundColor: "#ffffff", resizeMode: "contain" } // no splash.image
   }
 };
