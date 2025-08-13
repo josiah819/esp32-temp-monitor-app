@@ -7,7 +7,7 @@ export default {
     scheme: "esp32temp",
     extra: {
       API_BASE_URL: "https://esp32-node-bridge-production.up.railway.app",
-      eas: { projectId: "<e5adda6d-fdac-4c0d-88fa-6bc8283512a2>" }
+      eas: { projectId: "e5adda6d-fdac-4c0d-88fa-6bc8283512a2" }
     },
     android: {
       package: "com.josiah.esp32tempmonitorapp", // all lowercase, must be unique
